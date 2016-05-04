@@ -1,0 +1,1016 @@
+# depslib dependency file v1.0
+1298589997 source:/home/sudi/Dokumente/Projects/CParticleEngine/source/CMain.cpp
+	"CMain.h"
+	"CParticleSystem.h"
+	"CParticleEmitter.h"
+	"CParticleDrawer.h"
+
+1298587189 /home/sudi/Dokumente/Projects/CParticleEngine/source/CMain.h
+	<irrlicht.h>
+
+1293723637 /usr/local/include/irrlicht/irrlicht.h
+	"IrrCompileConfig.h"
+	"aabbox3d.h"
+	"CDynamicMeshBuffer.h"
+	"CIndexBuffer.h"
+	"CMeshBuffer.h"
+	"coreutil.h"
+	"CVertexBuffer.h"
+	"dimension2d.h"
+	"ECullingTypes.h"
+	"EDebugSceneTypes.h"
+	"EDriverFeatures.h"
+	"EDriverTypes.h"
+	"EGUIAlignment.h"
+	"EGUIElementTypes.h"
+	"EHardwareBufferFlags.h"
+	"EMaterialFlags.h"
+	"EMaterialTypes.h"
+	"EMeshWriterEnums.h"
+	"EMessageBoxFlags.h"
+	"ESceneNodeAnimatorTypes.h"
+	"ESceneNodeTypes.h"
+	"ETerrainElements.h"
+	"fast_atof.h"
+	"heapsort.h"
+	"IAnimatedMesh.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+	"IAnimatedMeshSceneNode.h"
+	"IAttributeExchangingObject.h"
+	"IAttributes.h"
+	"IBillboardSceneNode.h"
+	"IBillboardTextSceneNode.h"
+	"IBoneSceneNode.h"
+	"ICameraSceneNode.h"
+	"ICursorControl.h"
+	"IDummyTransformationSceneNode.h"
+	"IDynamicMeshBuffer.h"
+	"IEventReceiver.h"
+	"IFileList.h"
+	"IFileSystem.h"
+	"IGeometryCreator.h"
+	"IGPUProgrammingServices.h"
+	"IGUIButton.h"
+	"IGUICheckBox.h"
+	"IGUIColorSelectDialog.h"
+	"IGUIComboBox.h"
+	"IGUIContextMenu.h"
+	"IGUIEditBox.h"
+	"IGUIElement.h"
+	"IGUIElementFactory.h"
+	"IGUIEnvironment.h"
+	"IGUIFileOpenDialog.h"
+	"IGUIFont.h"
+	"IGUIFontBitmap.h"
+	"IGUIImage.h"
+	"IGUIInOutFader.h"
+	"IGUIListBox.h"
+	"IGUIMeshViewer.h"
+	"IGUIScrollBar.h"
+	"IGUISkin.h"
+	"IGUISpinBox.h"
+	"IGUISpriteBank.h"
+	"IGUIStaticText.h"
+	"IGUITabControl.h"
+	"IGUITable.h"
+	"IGUIToolbar.h"
+	"IGUIWindow.h"
+	"IGUITreeView.h"
+	"IImage.h"
+	"IImageLoader.h"
+	"IImageWriter.h"
+	"IIndexBuffer.h"
+	"ILightSceneNode.h"
+	"ILogger.h"
+	"IMaterialRenderer.h"
+	"IMaterialRendererServices.h"
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"IMeshCache.h"
+	"IMeshLoader.h"
+	"IMeshManipulator.h"
+	"IMeshSceneNode.h"
+	"IMeshWriter.h"
+	"IMetaTriangleSelector.h"
+	"IOSOperator.h"
+	"IParticleSystemSceneNode.h"
+	"IQ3LevelMesh.h"
+	"IQ3Shader.h"
+	"IReadFile.h"
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"IrrlichtDevice.h"
+	"irrList.h"
+	"irrMap.h"
+	"irrMath.h"
+	"irrString.h"
+	"irrTypes.h"
+	"path.h"
+	"irrXML.h"
+	"ISceneCollisionManager.h"
+	"ISceneManager.h"
+	"ISceneNode.h"
+	"ISceneNodeAnimator.h"
+	"ISceneNodeAnimatorCameraFPS.h"
+	"ISceneNodeAnimatorCameraMaya.h"
+	"ISceneNodeAnimatorCollisionResponse.h"
+	"ISceneNodeAnimatorFactory.h"
+	"ISceneNodeFactory.h"
+	"ISceneUserDataSerializer.h"
+	"IShaderConstantSetCallBack.h"
+	"IShadowVolumeSceneNode.h"
+	"ISkinnedMesh.h"
+	"ITerrainSceneNode.h"
+	"ITextSceneNode.h"
+	"ITexture.h"
+	"ITimer.h"
+	"ITriangleSelector.h"
+	"IVertexBuffer.h"
+	"IVideoDriver.h"
+	"IVideoModeList.h"
+	"IVolumeLightSceneNode.h"
+	"IWriteFile.h"
+	"IXMLReader.h"
+	"IXMLWriter.h"
+	"ILightManager.h"
+	"Keycodes.h"
+	"line2d.h"
+	"line3d.h"
+	"matrix4.h"
+	"plane3d.h"
+	"position2d.h"
+	"quaternion.h"
+	"rect.h"
+	"S3DVertex.h"
+	"SAnimatedMesh.h"
+	"SceneParameters.h"
+	"SColor.h"
+	"SExposedVideoData.h"
+	"SIrrCreationParameters.h"
+	"SKeyMap.h"
+	"SLight.h"
+	"SMaterial.h"
+	"SMesh.h"
+	"SMeshBuffer.h"
+	"SMeshBufferLightMap.h"
+	"SMeshBufferTangents.h"
+	"SParticle.h"
+	"SSharedMeshBuffer.h"
+	"SSkinMeshBuffer.h"
+	"SVertexIndex.h"
+	"SViewFrustum.h"
+	"triangle3d.h"
+	"vector2d.h"
+	"vector3d.h"
+	"SIrrCreationParameters.h"
+
+1293723636 /usr/local/include/irrlicht/IrrCompileConfig.h
+	<stdio.h>
+	<xtl.h>
+
+1293723637 /usr/local/include/irrlicht/aabbox3d.h
+	"irrMath.h"
+	"plane3d.h"
+	"line3d.h"
+
+1293723637 /usr/local/include/irrlicht/irrMath.h
+	"IrrCompileConfig.h"
+	"irrTypes.h"
+	<math.h>
+	<float.h>
+	<stdlib.h>
+	<limits.h>
+
+1293723637 /usr/local/include/irrlicht/irrTypes.h
+	"IrrCompileConfig.h"
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1293723637 /usr/local/include/irrlicht/plane3d.h
+	"irrMath.h"
+	"vector3d.h"
+
+1293723637 /usr/local/include/irrlicht/vector3d.h
+	"irrMath.h"
+
+1293723637 /usr/local/include/irrlicht/line3d.h
+	"irrTypes.h"
+	"vector3d.h"
+
+1293723636 /usr/local/include/irrlicht/CDynamicMeshBuffer.h
+	"IDynamicMeshBuffer.h"
+	"CVertexBuffer.h"
+	"CIndexBuffer.h"
+
+1293723636 /usr/local/include/irrlicht/IDynamicMeshBuffer.h
+	"IMeshBuffer.h"
+	"IVertexBuffer.h"
+	"IIndexBuffer.h"
+
+1293723636 /usr/local/include/irrlicht/IMeshBuffer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"aabbox3d.h"
+	"S3DVertex.h"
+	"SVertexIndex.h"
+	"EHardwareBufferFlags.h"
+	"EPrimitiveTypes.h"
+
+1293723636 /usr/local/include/irrlicht/IReferenceCounted.h
+	"irrTypes.h"
+
+1293723637 /usr/local/include/irrlicht/SMaterial.h
+	"SColor.h"
+	"matrix4.h"
+	"irrArray.h"
+	"irrMath.h"
+	"EMaterialTypes.h"
+	"EMaterialFlags.h"
+	"SMaterialLayer.h"
+
+1293723637 /usr/local/include/irrlicht/SColor.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1293723637 /usr/local/include/irrlicht/matrix4.h
+	"irrMath.h"
+	"vector3d.h"
+	"vector2d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+	"rect.h"
+	"irrString.h"
+	<windows.h>
+
+1293723637 /usr/local/include/irrlicht/vector2d.h
+	"irrMath.h"
+	"dimension2d.h"
+
+1293723637 /usr/local/include/irrlicht/dimension2d.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1293723637 /usr/local/include/irrlicht/rect.h
+	"irrTypes.h"
+	"dimension2d.h"
+	"position2d.h"
+
+1293723637 /usr/local/include/irrlicht/position2d.h
+	"vector2d.h"
+
+1293723637 /usr/local/include/irrlicht/irrString.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1293723637 /usr/local/include/irrlicht/irrAllocator.h
+	"irrTypes.h"
+	<new>
+	<memory.h>
+
+1293723637 /usr/local/include/irrlicht/irrArray.h
+	"irrTypes.h"
+	"heapsort.h"
+	"irrAllocator.h"
+	"irrMath.h"
+
+1293723637 /usr/local/include/irrlicht/heapsort.h
+	"irrTypes.h"
+
+1293723636 /usr/local/include/irrlicht/EMaterialTypes.h
+
+1293723636 /usr/local/include/irrlicht/EMaterialFlags.h
+
+1293723637 /usr/local/include/irrlicht/SMaterialLayer.h
+	"matrix4.h"
+	"irrAllocator.h"
+
+1293723637 /usr/local/include/irrlicht/S3DVertex.h
+	"vector3d.h"
+	"vector2d.h"
+	"SColor.h"
+
+1293723637 /usr/local/include/irrlicht/SVertexIndex.h
+	"irrTypes.h"
+
+1293723636 /usr/local/include/irrlicht/EHardwareBufferFlags.h
+
+1293723636 /usr/local/include/irrlicht/EPrimitiveTypes.h
+
+1293723636 /usr/local/include/irrlicht/IVertexBuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"S3DVertex.h"
+
+1293723636 /usr/local/include/irrlicht/IIndexBuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SVertexIndex.h"
+
+1293723636 /usr/local/include/irrlicht/CVertexBuffer.h
+	"IVertexBuffer.h"
+
+1293723636 /usr/local/include/irrlicht/CIndexBuffer.h
+	"IIndexBuffer.h"
+
+1293723636 /usr/local/include/irrlicht/CMeshBuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1293723637 /usr/local/include/irrlicht/coreutil.h
+	"irrString.h"
+	"path.h"
+
+1293723637 /usr/local/include/irrlicht/path.h
+	"irrString.h"
+
+1293723636 /usr/local/include/irrlicht/ECullingTypes.h
+	"irrTypes.h"
+
+1293723636 /usr/local/include/irrlicht/EDebugSceneTypes.h
+
+1293723636 /usr/local/include/irrlicht/EDriverFeatures.h
+
+1293723636 /usr/local/include/irrlicht/EDriverTypes.h
+
+1293723636 /usr/local/include/irrlicht/EGUIAlignment.h
+
+1293723636 /usr/local/include/irrlicht/EGUIElementTypes.h
+	"irrTypes.h"
+
+1293723636 /usr/local/include/irrlicht/EMeshWriterEnums.h
+	"irrTypes.h"
+
+1293723636 /usr/local/include/irrlicht/EMessageBoxFlags.h
+
+1293723636 /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h
+
+1293723636 /usr/local/include/irrlicht/ESceneNodeTypes.h
+	"irrTypes.h"
+
+1293723636 /usr/local/include/irrlicht/ETerrainElements.h
+
+1293723637 /usr/local/include/irrlicht/fast_atof.h
+	"irrMath.h"
+
+1293723636 /usr/local/include/irrlicht/IAnimatedMesh.h
+	"aabbox3d.h"
+	"IMesh.h"
+
+1293723636 /usr/local/include/irrlicht/IMesh.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"EHardwareBufferFlags.h"
+
+1293723636 /usr/local/include/irrlicht/IAnimatedMeshMD2.h
+	"IAnimatedMesh.h"
+
+1293723636 /usr/local/include/irrlicht/IAnimatedMeshMD3.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+	"quaternion.h"
+
+1293723636 /usr/local/include/irrlicht/IQ3Shader.h
+	"irrArray.h"
+	"fast_atof.h"
+	"IFileSystem.h"
+	"IVideoDriver.h"
+	"coreutil.h"
+
+1293723636 /usr/local/include/irrlicht/IFileSystem.h
+	"IReferenceCounted.h"
+	"IXMLReader.h"
+	"IFileArchive.h"
+
+1293723636 /usr/local/include/irrlicht/IXMLReader.h
+	"IReferenceCounted.h"
+	"irrXML.h"
+
+1293723637 /usr/local/include/irrlicht/irrXML.h
+	<stdio.h>
+	"IrrCompileConfig.h"
+	<irrXML.h>
+	<string>
+	<irrXML.h>
+	<irrXML.h>
+	<irrXML.h>
+
+1293723636 /usr/local/include/irrlicht/IFileArchive.h
+	"IReadFile.h"
+	"IFileList.h"
+
+1293723636 /usr/local/include/irrlicht/IReadFile.h
+	"IReferenceCounted.h"
+	"coreutil.h"
+
+1293723636 /usr/local/include/irrlicht/IFileList.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1293723636 /usr/local/include/irrlicht/IVideoDriver.h
+	"rect.h"
+	"SColor.h"
+	"ITexture.h"
+	"irrArray.h"
+	"matrix4.h"
+	"plane3d.h"
+	"dimension2d.h"
+	"position2d.h"
+	"SMaterial.h"
+	"IMeshBuffer.h"
+	"triangle3d.h"
+	"EDriverTypes.h"
+	"EDriverFeatures.h"
+	"SExposedVideoData.h"
+
+1293723636 /usr/local/include/irrlicht/ITexture.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"dimension2d.h"
+	"EDriverTypes.h"
+	"path.h"
+	"matrix4.h"
+
+1293723636 /usr/local/include/irrlicht/IImage.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+	"SColor.h"
+
+1293723637 /usr/local/include/irrlicht/triangle3d.h
+	"vector3d.h"
+	"line3d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+
+1293723637 /usr/local/include/irrlicht/SExposedVideoData.h
+
+1293723637 /usr/local/include/irrlicht/quaternion.h
+	"irrTypes.h"
+	"irrMath.h"
+	"matrix4.h"
+	"vector3d.h"
+
+1293723636 /usr/local/include/irrlicht/IAnimatedMeshSceneNode.h
+	"ISceneNode.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+
+1293723636 /usr/local/include/irrlicht/ISceneNode.h
+	"IAttributeExchangingObject.h"
+	"ESceneNodeTypes.h"
+	"ECullingTypes.h"
+	"EDebugSceneTypes.h"
+	"ISceneNodeAnimator.h"
+	"ITriangleSelector.h"
+	"SMaterial.h"
+	"irrString.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"irrList.h"
+	"IAttributes.h"
+
+1293723636 /usr/local/include/irrlicht/IAttributeExchangingObject.h
+	"IReferenceCounted.h"
+
+1293723636 /usr/local/include/irrlicht/ISceneNodeAnimator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"ESceneNodeAnimatorTypes.h"
+	"IAttributeExchangingObject.h"
+	"IEventReceiver.h"
+
+1293723636 /usr/local/include/irrlicht/IEventReceiver.h
+	"ILogger.h"
+	"Keycodes.h"
+	"irrString.h"
+
+1293723636 /usr/local/include/irrlicht/ILogger.h
+	"IReferenceCounted.h"
+
+1293723637 /usr/local/include/irrlicht/Keycodes.h
+
+1293723636 /usr/local/include/irrlicht/ITriangleSelector.h
+	"IReferenceCounted.h"
+	"triangle3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"line3d.h"
+
+1293723637 /usr/local/include/irrlicht/irrList.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+
+1293723636 /usr/local/include/irrlicht/IAttributes.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"vector3d.h"
+	"vector2d.h"
+	"line2d.h"
+	"line3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"rect.h"
+	"matrix4.h"
+	"quaternion.h"
+	"plane3d.h"
+	"triangle3d.h"
+	"line2d.h"
+	"line3d.h"
+	"irrString.h"
+	"irrArray.h"
+	"IXMLReader.h"
+	"EAttributes.h"
+
+1293723637 /usr/local/include/irrlicht/line2d.h
+	"irrTypes.h"
+	"vector2d.h"
+
+1293723636 /usr/local/include/irrlicht/EAttributes.h
+
+1293723636 /usr/local/include/irrlicht/IBoneSceneNode.h
+	"ISceneNode.h"
+
+1293723636 /usr/local/include/irrlicht/IBillboardSceneNode.h
+	"ISceneNode.h"
+
+1293723636 /usr/local/include/irrlicht/IBillboardTextSceneNode.h
+	"IBillboardSceneNode.h"
+
+1293723636 /usr/local/include/irrlicht/ICameraSceneNode.h
+	"ISceneNode.h"
+	"IEventReceiver.h"
+
+1293723636 /usr/local/include/irrlicht/ICursorControl.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+
+1293723636 /usr/local/include/irrlicht/IDummyTransformationSceneNode.h
+	"ISceneNode.h"
+
+1293723636 /usr/local/include/irrlicht/IGeometryCreator.h
+	"IReferenceCounted.h"
+	"IMesh.h"
+	"IImage.h"
+
+1293723636 /usr/local/include/irrlicht/IGPUProgrammingServices.h
+	"EShaderTypes.h"
+	"EMaterialTypes.h"
+	"EPrimitiveTypes.h"
+	"path.h"
+
+1293723636 /usr/local/include/irrlicht/EShaderTypes.h
+	"irrTypes.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIButton.h
+	"IGUIElement.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIElement.h
+	"IAttributeExchangingObject.h"
+	"irrList.h"
+	"rect.h"
+	"irrString.h"
+	"IEventReceiver.h"
+	"EGUIElementTypes.h"
+	"EGUIAlignment.h"
+	"IAttributes.h"
+
+1293723636 /usr/local/include/irrlicht/IGUICheckBox.h
+	"IGUIElement.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIColorSelectDialog.h
+	"IGUIElement.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIComboBox.h
+	"IGUIElement.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIContextMenu.h
+	"IGUIElement.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIEditBox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIElementFactory.h
+	"IReferenceCounted.h"
+	"EGUIElementTypes.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIEnvironment.h
+	"IReferenceCounted.h"
+	"IGUISkin.h"
+	"rect.h"
+	"EMessageBoxFlags.h"
+	"IEventReceiver.h"
+	"IXMLReader.h"
+	"path.h"
+
+1293723636 /usr/local/include/irrlicht/IGUISkin.h
+	"IAttributeExchangingObject.h"
+	"EGUIAlignment.h"
+	"SColor.h"
+	"rect.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIFileOpenDialog.h
+	"IGUIElement.h"
+	"path.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIFont.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"rect.h"
+	"irrString.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIFontBitmap.h
+	"IGUIFont.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIImage.h
+	"IGUIElement.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIInOutFader.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIListBox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIMeshViewer.h
+	"IGUIElement.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIScrollBar.h
+	"IGUIElement.h"
+
+1293723636 /usr/local/include/irrlicht/IGUISpinBox.h
+	"IGUIElement.h"
+
+1293723636 /usr/local/include/irrlicht/IGUISpriteBank.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SColor.h"
+	"rect.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIStaticText.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1293723636 /usr/local/include/irrlicht/IGUITabControl.h
+	"IGUIElement.h"
+	"SColor.h"
+	"IGUISkin.h"
+
+1293723636 /usr/local/include/irrlicht/IGUITable.h
+	"IGUIElement.h"
+	"irrTypes.h"
+	"SColor.h"
+	"IGUISkin.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIToolbar.h
+	"IGUIElement.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIWindow.h
+	"IGUIElement.h"
+	"EMessageBoxFlags.h"
+
+1293723636 /usr/local/include/irrlicht/IGUITreeView.h
+	"IGUIElement.h"
+	"IGUIImageList.h"
+	"irrTypes.h"
+
+1293723636 /usr/local/include/irrlicht/IGUIImageList.h
+	"IGUIElement.h"
+	"rect.h"
+	"irrTypes.h"
+
+1293723636 /usr/local/include/irrlicht/IImageLoader.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"path.h"
+
+1293723636 /usr/local/include/irrlicht/IImageWriter.h
+	"IReferenceCounted.h"
+	"irrString.h"
+	"coreutil.h"
+
+1293723636 /usr/local/include/irrlicht/ILightSceneNode.h
+	"ISceneNode.h"
+	"SLight.h"
+
+1293723637 /usr/local/include/irrlicht/SLight.h
+	"SColor.h"
+
+1293723636 /usr/local/include/irrlicht/IMaterialRenderer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1293723636 /usr/local/include/irrlicht/IMaterialRendererServices.h
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1293723636 /usr/local/include/irrlicht/IMeshCache.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1293723636 /usr/local/include/irrlicht/IMeshLoader.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1293723636 /usr/local/include/irrlicht/IMeshManipulator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IAnimatedMesh.h"
+	"IMeshBuffer.h"
+	"SVertexManipulator.h"
+
+1293723637 /usr/local/include/irrlicht/SVertexManipulator.h
+	"S3DVertex.h"
+	"SColor.h"
+
+1293723636 /usr/local/include/irrlicht/IMeshSceneNode.h
+	"ISceneNode.h"
+
+1293723636 /usr/local/include/irrlicht/IMeshWriter.h
+	"IReferenceCounted.h"
+	"EMeshWriterEnums.h"
+
+1293723636 /usr/local/include/irrlicht/IMetaTriangleSelector.h
+	"ITriangleSelector.h"
+
+1293723636 /usr/local/include/irrlicht/IOSOperator.h
+	"IReferenceCounted.h"
+
+1293723636 /usr/local/include/irrlicht/IParticleSystemSceneNode.h
+	"ISceneNode.h"
+	"IParticleAnimatedMeshSceneNodeEmitter.h"
+	"IParticleBoxEmitter.h"
+	"IParticleCylinderEmitter.h"
+	"IParticleMeshEmitter.h"
+	"IParticleRingEmitter.h"
+	"IParticleSphereEmitter.h"
+	"IParticleAttractionAffector.h"
+	"IParticleFadeOutAffector.h"
+	"IParticleGravityAffector.h"
+	"IParticleRotationAffector.h"
+	"dimension2d.h"
+
+1293723636 /usr/local/include/irrlicht/IParticleAnimatedMeshSceneNodeEmitter.h
+	"IParticleEmitter.h"
+	"IAnimatedMeshSceneNode.h"
+
+1293723636 /usr/local/include/irrlicht/IParticleEmitter.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1293723637 /usr/local/include/irrlicht/SParticle.h
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+
+1293723636 /usr/local/include/irrlicht/IParticleBoxEmitter.h
+	"IParticleEmitter.h"
+	"aabbox3d.h"
+
+1293723636 /usr/local/include/irrlicht/IParticleCylinderEmitter.h
+	"IParticleEmitter.h"
+
+1293723636 /usr/local/include/irrlicht/IParticleMeshEmitter.h
+	"IParticleEmitter.h"
+	"IMesh.h"
+
+1293723636 /usr/local/include/irrlicht/IParticleRingEmitter.h
+	"IParticleEmitter.h"
+
+1293723636 /usr/local/include/irrlicht/IParticleSphereEmitter.h
+	"IParticleEmitter.h"
+
+1293723636 /usr/local/include/irrlicht/IParticleAttractionAffector.h
+	"IParticleAffector.h"
+
+1293723636 /usr/local/include/irrlicht/IParticleAffector.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1293723636 /usr/local/include/irrlicht/IParticleFadeOutAffector.h
+	"IParticleAffector.h"
+
+1293723636 /usr/local/include/irrlicht/IParticleGravityAffector.h
+	"IParticleAffector.h"
+
+1293723636 /usr/local/include/irrlicht/IParticleRotationAffector.h
+	"IParticleAffector.h"
+
+1293723636 /usr/local/include/irrlicht/IQ3LevelMesh.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+
+1293723637 /usr/local/include/irrlicht/IrrlichtDevice.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+	"IVideoDriver.h"
+	"EDriverTypes.h"
+	"EDeviceTypes.h"
+	"IEventReceiver.h"
+	"ICursorControl.h"
+	"IVideoModeList.h"
+	"ITimer.h"
+	"IOSOperator.h"
+
+1293723636 /usr/local/include/irrlicht/EDeviceTypes.h
+
+1293723636 /usr/local/include/irrlicht/IVideoModeList.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+
+1293723636 /usr/local/include/irrlicht/ITimer.h
+	"IReferenceCounted.h"
+
+1293723637 /usr/local/include/irrlicht/irrMap.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1293723636 /usr/local/include/irrlicht/ISceneCollisionManager.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"line3d.h"
+
+1293723636 /usr/local/include/irrlicht/ISceneManager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"irrString.h"
+	"path.h"
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+	"ETerrainElements.h"
+	"ESceneNodeTypes.h"
+	"ESceneNodeAnimatorTypes.h"
+	"EMeshWriterEnums.h"
+	"SceneParameters.h"
+	"IGeometryCreator.h"
+	"ISkinnedMesh.h"
+
+1293723637 /usr/local/include/irrlicht/SceneParameters.h
+
+1293723636 /usr/local/include/irrlicht/ISkinnedMesh.h
+	"irrArray.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMesh.h"
+	"SSkinMeshBuffer.h"
+
+1293723637 /usr/local/include/irrlicht/SSkinMeshBuffer.h
+	"IMeshBuffer.h"
+	"S3DVertex.h"
+
+1293723636 /usr/local/include/irrlicht/ISceneNodeAnimatorCameraFPS.h
+	"ISceneNodeAnimator.h"
+	"IEventReceiver.h"
+
+1293723636 /usr/local/include/irrlicht/ISceneNodeAnimatorCameraMaya.h
+	"ISceneNodeAnimator.h"
+
+1293723636 /usr/local/include/irrlicht/ISceneNodeAnimatorCollisionResponse.h
+	"ISceneNode.h"
+
+1293723636 /usr/local/include/irrlicht/ISceneNodeAnimatorFactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeAnimatorTypes.h"
+
+1293723636 /usr/local/include/irrlicht/ISceneNodeFactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeTypes.h"
+
+1293723636 /usr/local/include/irrlicht/ISceneUserDataSerializer.h
+	"IReferenceCounted.h"
+
+1293723636 /usr/local/include/irrlicht/IShaderConstantSetCallBack.h
+	"IReferenceCounted.h"
+
+1293723636 /usr/local/include/irrlicht/IShadowVolumeSceneNode.h
+	"ISceneNode.h"
+
+1293723636 /usr/local/include/irrlicht/ITerrainSceneNode.h
+	"ETerrainElements.h"
+	"ISceneNode.h"
+	"IDynamicMeshBuffer.h"
+	"irrArray.h"
+
+1293723636 /usr/local/include/irrlicht/ITextSceneNode.h
+	"ISceneNode.h"
+
+1293723636 /usr/local/include/irrlicht/IVolumeLightSceneNode.h
+	"ISceneNode.h"
+
+1293723636 /usr/local/include/irrlicht/IWriteFile.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1293723636 /usr/local/include/irrlicht/IXMLWriter.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"irrString.h"
+
+1293723636 /usr/local/include/irrlicht/ILightManager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+
+1293723637 /usr/local/include/irrlicht/SAnimatedMesh.h
+	"IAnimatedMesh.h"
+	"IMesh.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1293723637 /usr/local/include/irrlicht/SIrrCreationParameters.h
+	"EDriverTypes.h"
+	"EDeviceTypes.h"
+	"dimension2d.h"
+	"ILogger.h"
+
+1293723637 /usr/local/include/irrlicht/SKeyMap.h
+	"Keycodes.h"
+
+1293723637 /usr/local/include/irrlicht/SMesh.h
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1293723637 /usr/local/include/irrlicht/SMeshBuffer.h
+	"CMeshBuffer.h"
+
+1293723637 /usr/local/include/irrlicht/SMeshBufferLightMap.h
+	"CMeshBuffer.h"
+
+1293723637 /usr/local/include/irrlicht/SMeshBufferTangents.h
+	"CMeshBuffer.h"
+
+1293723637 /usr/local/include/irrlicht/SSharedMeshBuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1293723637 /usr/local/include/irrlicht/SViewFrustum.h
+	"plane3d.h"
+	"vector3d.h"
+	"line3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IVideoDriver.h"
+
+1298345420 source:/home/sudi/Dokumente/Projects/CParticleEngine/source/CParticleSystem.cpp
+	"CParticleSystem.h"
+	"CTrailParticleDrawer.h"
+	"CBillboardParticleDrawer.h"
+	"COrientedParticleDrawer.h"
+
+1298247174 /home/sudi/Dokumente/Projects/CParticleEngine/source/CParticleSystem.h
+	<irrlicht.h>
+
+1298589753 source:/home/sudi/Dokumente/Projects/CParticleEngine/source/CParticleDrawer.cpp
+	"CParticleDrawer.h"
+	"CParticleEmitter.h"
+
+1298345966 /home/sudi/Dokumente/Projects/CParticleEngine/source/CParticleDrawer.h
+	<irrlicht.h>
+	"Particle.h"
+
+1298348451 source:/home/sudi/Dokumente/Projects/CParticleEngine/source/CTrailParticleDrawer.cpp
+	"CTrailParticleDrawer.h"
+
+1298345967 /home/sudi/Dokumente/Projects/CParticleEngine/source/CTrailParticleDrawer.h
+	"CParticleDrawer.h"
+
+1298589897 source:/home/sudi/Dokumente/Projects/CParticleEngine/source/CBillboardParticleDrawer.cpp
+	"CBillboardParticleDrawer.h"
+
+1298345966 /home/sudi/Dokumente/Projects/CParticleEngine/source/CBillboardParticleDrawer.h
+	"CParticleDrawer.h"
+
+1298589428 /home/sudi/Dokumente/Projects/CParticleEngine/source/CParticleEmitter.h
+	<irrlicht.h>
+	"Particle.h"
+
+1298588468 /home/sudi/Dokumente/Projects/CParticleEngine/source/Particle.h
+	<irrlicht.h>
+
+1298589428 source:/home/sudi/Dokumente/Projects/CParticleEngine/source/CParticleEmitter.cpp
+	"CParticleEmitter.h"
+
+1298348451 source:/home/sudi/Dokumente/Projects/CParticleEngine/source/COrientedParticleDrawer.cpp
+	"COrientedParticleDrawer.h"
+
+1298345966 /home/sudi/Dokumente/Projects/CParticleEngine/source/COrientedParticleDrawer.h
+	"CParticleDrawer.h"
+

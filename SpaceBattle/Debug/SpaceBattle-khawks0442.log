@@ -1,0 +1,30 @@
+﻿Сборка начата 11.07.2014 17:27:45.
+     1>Проект "C:\Users\vladimir.gnidenko\documents\visual studio 2010\Projects\SpaceBattle\SpaceBattle\SpaceBattle.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Обращение к "Debug\SpaceBattle.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt fighter_scene_node.cpp rocket_manager.cpp rocket_scene_node.cpp
+         rocket_scene_node.cpp
+     1>rocket_scene_node.cpp(21): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105): см. объявление "strcpy"
+     1>rocket_scene_node.cpp(25): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110): см. объявление "strcat"
+     1>rocket_scene_node.cpp(36): error C2653: cRocketManager: не является именем класса или пространства имен
+     1>rocket_scene_node.cpp(38): error C2065: m_pManager: необъявленный идентификатор
+     1>rocket_scene_node.cpp(38): error C2227: выражение слева от "->createOctreeTriangleSelector" должно указывать на тип класса, структуры или объединения либо на универсальный тип
+                 тип: 'unknown-type'
+     1>rocket_scene_node.cpp(41): error C2065: m_pManager: необъявленный идентификатор
+     1>rocket_scene_node.cpp(41): error C2227: выражение слева от "->createCollisionResponseAnimator" должно указывать на тип класса, структуры или объединения либо на универсальный тип
+                 тип: 'unknown-type'
+     1>rocket_scene_node.cpp(42): error C2065: m_aRockets: необъявленный идентификатор
+     1>rocket_scene_node.cpp(42): error C2227: выражение слева от "->getMeshSceneNode" должно указывать на тип класса, структуры или объединения либо на универсальный тип
+         fighter_scene_node.cpp
+         Создание кода...
+         Компиляция...
+         rocket_manager.cpp
+         Создание кода...
+     1>Построение проекта "C:\Users\vladimir.gnidenko\documents\visual studio 2010\Projects\SpaceBattle\SpaceBattle\SpaceBattle.vcxproj" завершено (целевые объекты build) с ошибкой.
+
+СБОЙ построения.
+
+Затраченное время: 00:00:03.49

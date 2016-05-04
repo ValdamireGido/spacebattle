@@ -1,0 +1,21 @@
+﻿  stdafx.cpp
+  rocket_scene_node.cpp
+  rocket_manager.cpp
+  game_object_scene_node.cpp
+  fighter_scene_node.cpp
+  CTrailParticleDrawer.cpp
+  CParticleSystem.cpp
+  CParticleEmitter.cpp
+  CParticleDrawer.cpp
+  COrientedParticleDrawer.cpp
+  CMain.cpp
+  CBillboardParticleDrawer.cpp
+  enemie_scene_node_manager.cpp
+enemie_scene_node_manager.cpp(57): warning C4018: <: несоответствие типов со знаком и без знака
+  enemie_scene_node.cpp
+  Создание кода...
+  main.cpp
+h:\shcool\spacebattle\spacebattle\c_timer.hpp(34): warning C4521: cTimer: заданы несколько конструкторов копии
+h:\shcool\spacebattle\spacebattle\irrlicht_include\ireferencecounted.h(119): warning C4793: irr::IReferenceCounted::drop: функция скомпилирована как машинная:
+  	Встроенный машинный код на языке ассемблера в управляемом коде не поддерживается
+  SpaceBattle.vcxproj -> H:\Shcool\SpaceBattle\Debug\SpaceBattle.exe

@@ -1,0 +1,74 @@
+﻿Сборка начата 25.07.2014 17:47:22.
+     1>Проект "C:\Users\vladimir.gnidenko\documents\visual studio 2010\Projects\SpaceBattle\SpaceBattle\SpaceBattle.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Обращение к "Release\SpaceBattle.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt enemie_scene_node.cpp enemie_scene_node_manager.cpp explosion\CBillboardParticleDrawer.cpp explosion\CMain.cpp explosion\COrientedParticleDrawer.cpp explosion\CParticleDrawer.cpp explosion\CParticleEmitter.cpp explosion\CParticleSystem.cpp explosion\CTrailParticleDrawer.cpp fighter_scene_node.cpp game_object_scene_node.cpp rocket_manager.cpp rocket_scene_node.cpp stdafx.cpp
+         enemie_scene_node.cpp
+         enemie_scene_node_manager.cpp
+     1>enemie_scene_node_manager.cpp(57): warning C4018: <: несоответствие типов со знаком и без знака
+         CBillboardParticleDrawer.cpp
+         CMain.cpp
+         COrientedParticleDrawer.cpp
+         CParticleDrawer.cpp
+     1>explosion\CParticleDrawer.cpp(155): warning C4244: аргумент: преобразование "float" в "irr::u32", возможна потеря данных
+         CParticleEmitter.cpp
+     1>explosion\CParticleEmitter.cpp(172): warning C4244: инициализация: преобразование "int" в "irr::f32", возможна потеря данных
+     1>explosion\CParticleEmitter.cpp(173): warning C4244: инициализация: преобразование "int" в "irr::f32", возможна потеря данных
+     1>explosion\CParticleEmitter.cpp(174): warning C4244: инициализация: преобразование "int" в "irr::f32", возможна потеря данных
+         CParticleSystem.cpp
+     1>explosion\CParticleSystem.cpp(120): warning C4244: инициализация: преобразование "irr::u32" в "irr::f32", возможна потеря данных
+         CTrailParticleDrawer.cpp
+         fighter_scene_node.cpp
+         game_object_scene_node.cpp
+         rocket_manager.cpp
+         rocket_scene_node.cpp
+     1>rocket_scene_node.cpp(21): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105): см. объявление "strcpy"
+     1>rocket_scene_node.cpp(25): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110): см. объявление "strcat"
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /clr /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHa /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\program files (x86)\reference assemblies\microsoft\framework\.netframework\v4.0\system.core.dll : warning C4945: ExtensionAttribute: не удается импортировать символ из "c:\program files (x86)\reference assemblies\microsoft\framework\.netframework\v4.0\system.core.dll": "System::Runtime::CompilerServices::ExtensionAttribute" уже был импортирован из другой сборки "mscorlib"
+                 c:\windows\microsoft.net\framework\v4.0.30319\mscorlib.dll: см. объявление "System::Runtime::CompilerServices::ExtensionAttribute"
+                 используется тип, обнаруженный первым; измените порядок импорта сборок, чтобы использовать текущий тип
+                 Сообщение диагностики возникло при импорте типа "System.Runtime.CompilerServices.ExtensionAttribute" из сборки "System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+     1>c:\users\vladimir.gnidenko\documents\visual studio 2010\projects\spacebattle\spacebattle\c_timer.hpp(34): warning C4521: cTimer: заданы несколько конструкторов копии
+     1>main.cpp(64): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+     1>main.cpp(133): warning C4305: аргумент: усечение из "double" к "irr::f32"
+     1>main.cpp(136): warning C4305: аргумент: усечение из "double" к "irr::f32"
+     1>main.cpp(139): warning C4305: аргумент: усечение из "double" к "irr::f32"
+     1>main.cpp(475): warning C4244: аргумент: преобразование "irr::f32" в "irr::s32", возможна потеря данных
+     1>main.cpp(475): warning C4244: аргумент: преобразование "irr::f32" в "irr::s32", возможна потеря данных
+     1>main.cpp(478): warning C4244: аргумент: преобразование "irr::f32" в "irr::s32", возможна потеря данных
+     1>main.cpp(478): warning C4244: аргумент: преобразование "irr::f32" в "irr::s32", возможна потеря данных
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vladimir.gnidenko\documents\visual studio 2010\Projects\SpaceBattle\Release\SpaceBattle.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\SpaceBattle.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vladimir.gnidenko\documents\visual studio 2010\Projects\SpaceBattle\Release\SpaceBattle.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vladimir.gnidenko\documents\visual studio 2010\Projects\SpaceBattle\Release\SpaceBattle.lib" /MACHINE:X86 Release\enemie_scene_node.obj
+         Release\enemie_scene_node_manager.obj
+         Release\CBillboardParticleDrawer.obj
+         Release\CMain.obj
+         Release\COrientedParticleDrawer.obj
+         Release\CParticleDrawer.obj
+         Release\CParticleEmitter.obj
+         Release\CParticleSystem.obj
+         Release\CTrailParticleDrawer.obj
+         Release\fighter_scene_node.obj
+         Release\game_object_scene_node.obj
+         Release\main.obj
+         Release\rocket_manager.obj
+         Release\rocket_scene_node.obj
+         Release\stdafx.obj
+         Создание кода
+         Создание кода завершено
+         SpaceBattle.vcxproj -> C:\Users\vladimir.gnidenko\documents\visual studio 2010\Projects\SpaceBattle\Release\SpaceBattle.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\vladimir.gnidenko\documents\visual studio 2010\Projects\SpaceBattle\Release\SpaceBattle.exe;#1" /manifest Release\SpaceBattle.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Файл "Release\SpaceBattle.unsuccessfulbuild" удаляется.
+         Обращение к "Release\SpaceBattle.lastbuildstate".
+     1>Построение проекта "C:\Users\vladimir.gnidenko\documents\visual studio 2010\Projects\SpaceBattle\SpaceBattle\SpaceBattle.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:11.77
