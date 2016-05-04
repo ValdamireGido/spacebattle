@@ -18,15 +18,15 @@ class MyEventReceiver;
 
 int collisionChek(cRocketManager * _pRockets, bool isGood = true);
 
-void setMainMenu(irr::gui::IGUIEnvironment * _pEnvironment,
-				 irr::gui::IGUIFont * _pFont );
-
 void setEnemiesFleeet(std::vector < irr::scene::ISceneNodeAnimator * > * _pAnimators,
 					  cEnemieNodeManager * _pEnemieManager, 
 					  irr::scene::ISceneManager * _pSceneMager,
 					  sApplicationContext * _pContext);
 
-static MyEventReceiver* myEventReceiver = nullptr;
-static irr::video::IVideoDriver * spVideoDriver = nullptr;
+struct Global
+{
+	static MyEventReceiver* myEventReceiver;
+	static irr::video::IVideoDriver* spVideoDriver;
+};
 
 #endif // _MAIN_H_

@@ -6,12 +6,12 @@ MainMenu::MainMenu(irr::gui::IGUIEnvironment* environment)
 	: MenuInterface(environment)
 {
 	Init();
-	myEventReceiver->AddGuiObserver(this);
+	Global::myEventReceiver->AddGuiObserver(this);
 }
 
 MainMenu::~MainMenu()
 {
-	myEventReceiver->RemoveGuiObserver(this);
+	Global::myEventReceiver->RemoveGuiObserver(this);
 }
 
 void MainMenu::Init()
@@ -90,16 +90,32 @@ void MainMenu::Init()
 							 , GUI_ID_CHOOSE_LEVEL_4
 							 , L"Choose Level 4"
 							 , L"Choosing the fourth game level");
+
+	m_focusedLevelTargets.resize(4);
+	m_focusedLevelTargets[LEVEL_1] = m_env->addImage(Global::spVideoDriver->getTexture("export/target.png"), 
+		irr::core::vector2d<s32>(levelButtonsXright + 5, upBorder));
+	m_focusedLevelTargets[LEVEL_2] = m_env->addImage(Global::spVideoDriver->getTexture("export/target.png"),
+		irr::core::vector2d<s32>(levelButtonsXright + 5, upBorder + 100));
+	m_focusedLevelTargets[LEVEL_3] = m_env->addImage(Global::spVideoDriver->getTexture("export/target.png"),
+		irr::core::vector2d<s32>(levelButtonsXright + 5, upBorder + 200));
+	m_focusedLevelTargets[LEVEL_4] = m_env->addImage(Global::spVideoDriver->getTexture("export/target.png"),
+		irr::core::vector2d<s32>(levelButtonsXright + 5, upBorder + 300));
+
+	for(int i = 0; i < m_focusedLevelTargets.size(); ++i)
+	{
+		m_focusedLevelTargets[i]->setVisible(false);
+	}
 }
 
 void MainMenu::OnGuiEvent(const irr::SEvent& event)
 {
-	if(event.EventType != irr::EET_GUI_EVENT)
+	if(event.EventType != irr::EET_GUI_EVENT ||
+		event.GUIEvent.EventType != irr::gui::EGET_BUTTON_CLICKED)
 	{
 		return;
 	}
 
-	switch(event.GUIEvent.EventType)
+	switch(event.GUIEvent.Caller->getID())
 	{
 	case GUI_ID_CHOOSE_LEVEL_1:
 		_setLevelButtonActive(GameLevels::LEVEL_1);
@@ -127,11 +143,13 @@ void MainMenu::_setLevelButtonActive(GameLevels level)
 		{
 			m_levelButtons[i]->setSprite(
 				irr::gui::EGUI_BUTTON_STATE::EGBS_BUTTON_UP, 0);
+			m_focusedLevelTargets[i]->setVisible(false);
 		}
 		else
 		{
 			m_levelButtons[i]->setSprite(
 				irr::gui::EGUI_BUTTON_STATE::EGBS_BUTTON_DOWN, 0);
+			m_focusedLevelTargets[i]->setVisible(true);
 		}
 	}
 }

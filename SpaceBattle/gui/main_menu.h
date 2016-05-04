@@ -32,6 +32,7 @@ private:
 
 private:
 	std::vector<irr::gui::IGUIButton*> m_levelButtons;
+	std::vector<irr::gui::IGUIImage*> m_focusedLevelTargets;
 };
 
 #endif //_MAIN_MENU_H_

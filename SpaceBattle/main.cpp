@@ -20,6 +20,9 @@
 using namespace irr;
 using namespace irrklang;
 
+MyEventReceiver* Global::myEventReceiver = nullptr;
+video::IVideoDriver* Global::spVideoDriver = nullptr;
+
 int main ()
 {
 	// Main device //
@@ -40,15 +43,15 @@ int main ()
 	context.isInGame = false;
 
 	// Initializing receiver //
-	myEventReceiver = new MyEventReceiver(&context);
+	Global::myEventReceiver = new MyEventReceiver(&context);
 
-	pMainDevice->setEventReceiver ( myEventReceiver ); // Adding receiver to device
+	pMainDevice->setEventReceiver ( Global::myEventReceiver ); // Adding receiver to device
 	pMainDevice->setWindowCaption ( L"Space Battle" ); // Text on the top of the application 
 	pMainDevice->setResizable ( false ); // Disabling window resizing
 
 	// Getting all main controll componets //
 	// Static part //
-	spVideoDriver = pMainDevice->getVideoDriver ();
+	Global::spVideoDriver = pMainDevice->getVideoDriver ();
 
 	// Other part // 
 	scene::ISceneManager * pSceneManager = pMainDevice->getSceneManager ();
@@ -83,7 +86,7 @@ int main ()
 	pCube->setScale ( core::vector3df ( X_SIDE / 2, Y_SIDE / 2, 0.1f ) );
 	pCube->setMaterialFlag ( video::EMF_LIGHTING, false );
 
-	video::ITexture * pTexture = spVideoDriver->getTexture ( "export\\background.tga" );
+	video::ITexture * pTexture = Global::spVideoDriver->getTexture ( "export\\background.tga" );
 
 	pCube->setMaterialTexture ( 0, pTexture );
 
@@ -116,7 +119,7 @@ int main ()
 			core::vector3df ( 0, 180, 0 ), // Rotation
 			core::vector3df ( 1.0f, 1.0f, 1.0f ) ); // Scale
 	
-	pFighter->setTexture ( "export\\fighter.tga", spVideoDriver );
+	pFighter->setTexture ( "export\\fighter.tga", Global::spVideoDriver );
 
 	// Enemie set //
 	cEnemieNodeManager enemieManager ( pMainDevice );
@@ -148,7 +151,6 @@ int main ()
 	pTextRocketsLaunched->setVisible ( false );
 
 	// Createing the main menu //
-	//setMainMenu ( pGUIEnvironment, pFont );
 	MainMenu* mainMenu = new MainMenu(pGUIEnvironment);
 
 	// Before the main loop starts //
@@ -248,7 +250,7 @@ int main ()
 				}
 				
 				// If exiting make all invisible //
-				if ( myEventReceiver->IsKeyDown ( irr::KEY_ESCAPE ) && isEnd )
+				if ( Global::myEventReceiver->IsKeyDown ( irr::KEY_ESCAPE ) && isEnd )
 				{
 					context.isInGame = false;
 					isLevelFinished = true;
@@ -284,7 +286,7 @@ int main ()
 					continue;
 				}
 
-				if ( myEventReceiver->IsKeyDown ( irr::KEY_ESCAPE ) && ! isEnd )
+				if ( Global::myEventReceiver->IsKeyDown ( irr::KEY_ESCAPE ) && ! isEnd )
 				{
 					context.isInGame = false;
 
@@ -308,14 +310,14 @@ int main ()
 				if ( ! isEnd )
 				{
 					float deltaTime = (f32)timer.getDeltaTime() / 100;
-					if (   myEventReceiver->IsKeyDown(irr::KEY_KEY_A)
-						|| myEventReceiver->IsKeyDown(irr::KEY_LEFT) )
+					if (   Global::myEventReceiver->IsKeyDown(irr::KEY_KEY_A)
+						|| Global::myEventReceiver->IsKeyDown(irr::KEY_LEFT) )
 					{
 						nodePosition.X += currentSpeed * deltaTime;
 					}
 
-					if (   myEventReceiver->IsKeyDown(irr::KEY_KEY_D)
-						|| myEventReceiver->IsKeyDown(irr::KEY_RIGHT))
+					if (   Global::myEventReceiver->IsKeyDown(irr::KEY_KEY_D)
+						|| Global::myEventReceiver->IsKeyDown(irr::KEY_RIGHT))
 					{
 						nodePosition.X -= currentSpeed * deltaTime;
 					}
@@ -389,7 +391,7 @@ int main ()
 					}
 
 					// Fire //
-					if ( myEventReceiver->IsKeyDown ( irr::KEY_SPACE ) && ! isLaunched )
+					if ( Global::myEventReceiver->IsKeyDown ( irr::KEY_SPACE ) && ! isLaunched )
 					{
 						isLaunched = true;
 
@@ -399,11 +401,11 @@ int main ()
 							pFighter->getMeshSceneNode()->getPosition ().Y,
 							pFighter->getMeshSceneNode()->getPosition ().Z );
 
-						pFighter->launch ( & rockets, spVideoDriver );
+						pFighter->launch ( & rockets, Global::spVideoDriver );
 
 						pSoundEngine->play2D ( "audio\\rocket_launch.mp3" );
 					}
-					else if ( ! myEventReceiver->IsKeyDown ( irr::KEY_SPACE ) && isLaunched ) 
+					else if ( ! Global::myEventReceiver->IsKeyDown ( irr::KEY_SPACE ) && isLaunched ) 
 						isLaunched = false;
 
 					/*if ( myEventReceiver->IsKeyDown ( irr::KEY_SPACE ) && ! isLaunched )
@@ -436,7 +438,7 @@ int main ()
 
 						int i = rand () % enemieManager.getVectorSize (); // misstake
 
-						enemieManager.getEnemie ( i )->launch ( & enemieRockets, spVideoDriver );
+						enemieManager.getEnemie ( i )->launch ( & enemieRockets, Global::spVideoDriver );
 					}
 					else if ( enemieManager.getVectorSize () == 0 )
 						printf ( "DEBUG: vector size = %d\n", enemieManager.getVectorSize () );
@@ -445,16 +447,16 @@ int main ()
 			} // is game started
 		
 			// DEBUG //
-			if ( myEventReceiver->IsKeyDown ( irr::KEY_KEY_G ) && ! isPressed )
+			if ( Global::myEventReceiver->IsKeyDown ( irr::KEY_KEY_G ) && ! isPressed )
 			{
 				isPressed = true;
 				printf ( "DEBUG: Fighter position - %f\n", pFighter->getMeshSceneNode()->getPosition().X );
 			}
-			if ( ! myEventReceiver->IsKeyDown ( irr::KEY_KEY_G ) && isPressed )
+			if ( ! Global::myEventReceiver->IsKeyDown ( irr::KEY_KEY_G ) && isPressed )
 				isPressed = false;
 							
 			// Drawing //
-			spVideoDriver->beginScene ( true, true, video::SColor ( 0, 255, 255, 255 ) );
+			Global::spVideoDriver->beginScene ( true, true, video::SColor ( 0, 255, 255, 255 ) );
 
 			if ( context.isInGame )
 			{
@@ -466,7 +468,7 @@ int main ()
 			}
 
 			// Drawing stoped //
-			spVideoDriver->endScene ();
+			Global::spVideoDriver->endScene ();
 		}
 	}	/////////////// Main loop ///////////////
 
@@ -522,68 +524,6 @@ int collisionChek ( cRocketManager * _pRockets, bool isGood )
 	}
 
 	return -1;
-}
-
-void setMainMenu(gui::IGUIEnvironment * _pEnvironment,
-				 gui::IGUIFont * _pFont )
-{
-	using namespace irr::gui;
-	
-	_pEnvironment->addImage ( spVideoDriver->getTexture ( "export\\background.tga" ), core::vector2di ( 0, 0 ) );
-
-	IGUISkin * pSkin = _pEnvironment->getSkin ();
-	IGUIFont * pGuiFont = _pFont;
-
-	if ( pGuiFont )
-		pSkin->setFont ( pGuiFont );
-
-	pSkin->setFont ( _pEnvironment->getBuiltInFont (), EGDF_TOOLTIP );
-
-	_pEnvironment->addButton ( core::rect < s32 > ( X_SIDE / 2, upBorder, X_SIDE / 2 + 200, upBorder + 50 )
-		, nullptr, GUI_ID_NEW_GAME, L"New Game / Continue game", L"Launches the game" );
-
-	_pEnvironment->addButton ( core::rect < s32 > ( X_SIDE / 2, upBorder + 100, X_SIDE / 2 + 200, upBorder + 150 )
-		, nullptr, GUI_ID_QUIT_BUTTON, L"Quit", L"Quiting the game" );
-
-	// Setting up the game level buttons
-	int levelButtonsXleft = 15;
-	int levelButtonsXright = levelButtonsXleft + 200;
-	
-	_pEnvironment->addButton(core::rect<s32>(levelButtonsXleft, 
-											 upBorder, 
-											 levelButtonsXright, 
-											 upBorder + 50)
-							 , nullptr
-							 , GUI_ID_CHOOSE_LEVEL_1
-							 , L"Choose Level 1"
-							 , L"Choosing the first game level");
-
-	_pEnvironment->addButton(core::rect<s32>(levelButtonsXleft, 
-											 upBorder + 100, 
-											 levelButtonsXright, 
-											 upBorder + 150)
-							 , nullptr
-							 , GUI_ID_CHOOSE_LEVEL_2
-							 , L"Choose Level 2"
-							 , L"Choosing the second game level");
-
-	_pEnvironment->addButton(core::rect<s32>(levelButtonsXleft, 
-											 upBorder + 200, 
-											 levelButtonsXright, 
-											 upBorder + 250)
-							 , nullptr
-							 , GUI_ID_CHOOSE_LEVEL_3
-							 , L"Choose Level 3"
-							 , L"Choosing the third game level");
-
-	_pEnvironment->addButton(core::rect<s32>(levelButtonsXleft,
-											 upBorder + 300, 
-											 levelButtonsXright, 
-											 upBorder + 350)
-							 , nullptr
-							 , GUI_ID_CHOOSE_LEVEL_4
-							 , L"Choose Level 4"
-							 , L"Choosing the fourth game level");
 }
 
 void setEnemiesFleeet(std::vector < scene::ISceneNodeAnimator * > * _pAnimators,
