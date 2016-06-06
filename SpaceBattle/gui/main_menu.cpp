@@ -105,6 +105,9 @@ void MainMenu::Init()
 	{
 		m_focusedLevelTargets[i]->setVisible(false);
 	}
+
+	m_env->addStaticText(L"Control tips:\n-> - move right\n <- - move left\n'space' - fire rocket\n'Esc' - enter main menu\n",
+		core::rect<s32>(X_SIDE / 2, Y_SIDE / 2, X_SIDE / 2 + 250, Y_SIDE - 300), true, false, NULL, -1, true);
 }
 
 void MainMenu::OnGuiEvent(const irr::SEvent& event)
